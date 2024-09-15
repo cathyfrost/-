@@ -1,42 +1,29 @@
-# 新生信息导入工具
+# New Student Information Import Tool
 
-欢迎使用新生信息导入工具！这个工具可以帮助你将自己的个人信息导入到数据库中，具体步骤请按照下方说明操作。
+English|[中文](https://github.com/cathyfrost/CXY_2024_DATA/blob/main/README_CN.md)
 
-## 使用方法
+Welcome to the New Student Information Import Tool! This tool will help you import your personal information into the database, please follow the instructions below.
 
-### 1. 下载可执行文件
-请下载 `dist` 压缩包并且解压。这是一个打包好的工具，运行时不需要任何环境。
+## Download
+Please download the `dist` zip archive from [latest release](https://github.com/cathyfrost/CXY_2024_DATA/releases/latest) and extract it. This is a packaged tool that requires no environment to run.
 
-### 2. 执行项目前
-
-你需要修改 `data.txt` 文件信息，文件中包含你的个人信息。每行的数据类型如下：
-
+## Arguments
 ```
-学号,姓名,班级,学院名称,政治面貌
-```
-
-#### 示例：
-如果你的信息是：
-- 学号：25030531
-- 姓名：张三
-- 班级：24软件一
-- 学院：计算机信息工程学院
-- 政治面貌：党员
-
-那么你需要在 `data.txt` 中写入以下内容，严格按照下面格式：
-
-```
-25030531,张三,22软件一,计算机信息工程学院,党员
+ -h, --help             show help message and exit
+--id ID                 ID of the record
+--name NAME             Name of the person
+--class_name CLASS_NAME Class name of the person
+--college COLLEGE       College of the person
+--political POLITICAL   Political status of the person
 ```
 
-注意：
-- 每个字段之间用**英文**逗号 `,` 分隔。
-- 程序需要连网
+## Use
+You should use the command line tool or bat file to add records, add your data as args and run the programme to successfully send your data to the server.
+The following is a sample.
+```
+data.exe --id ID --name NAME --class_name CLASS_NAME --college COLLEGE --political POLITICAL
+```
+> # Attention
+> The id is not a character, and college is a second level college not a university name.
 
-### 3. 运行 `data.exe`
-
-运行 `data.exe` 文件来导入你的信息。操作步骤：
-1. 确保 `data.txt` 文件和 `data.exe` 位于同一个目录中。
-2. 双击 `data.exe` 运行。
-
-如果导入成功，你会看到闪过一个窗口，如果你看的够仔细，你会看到创建有：所有记录插入成功的字样闪过！
+If the import is successful, you will receive the message ‘All records inserted successfully’.
