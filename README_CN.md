@@ -19,9 +19,13 @@
 
 ## 使用
 你应该使用命令行工具或者批处理文件来添加你的记录，将您的信息作为参数运行程序来发送您的信息给服务器。
-如下内容是个样例：
 ```
 data.exe --id ID --name NAME --class_name CLASS_NAME --college COLLEGE --political POLITICAL
+```
+如下内容是个样例：
+```
+data.exe --id 22030531 --name "小唐" --class_name "23软件一" --college "计算机信息工程学院" --political "共青团员"
+
 ```
 > # 注意
 > id不是字符，college是二级学院不是大学名字。
