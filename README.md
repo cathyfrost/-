@@ -19,9 +19,12 @@ Please download the `dist` zip archive from [latest release](https://github.com/
 
 ## Use
 You should use the command line tool or bat file to add records, add your data as args and run the programme to successfully send your data to the server.
-The following is a sample.
 ```
 data.exe --id ID --name NAME --class_name CLASS_NAME --college COLLEGE --political POLITICAL
+```
+following is a sample.
+```
+data.exe --id 22030531 --name "小唐" --class_name "22软件一" --college "计算机信息工程学院" --political "共青团员"
 ```
 > # Attention
 > The id is not a character, and college is a second level college not a university name.
