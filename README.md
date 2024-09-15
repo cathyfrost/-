@@ -24,7 +24,7 @@ data.exe --id ID --name NAME --class_name CLASS_NAME --college COLLEGE --politic
 ```
 The following is a sample.
 ```
-data.exe --id 22030531 --name "小唐" --class_name "22软件一" --college "计算机信息工程学院" --political "共青团员"
+data.exe --id 22030531 --name "小唐" --class_name "23软件一" --college "计算机信息工程学院" --political "共青团员"
 ```
 > # Attention
 > The id is not a character, and college is a second level college not a university name.
