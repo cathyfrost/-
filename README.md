@@ -22,7 +22,7 @@ You should use the command line tool or bat file to add records, add your data a
 ```
 data.exe --id ID --name NAME --class_name CLASS_NAME --college COLLEGE --political POLITICAL
 ```
-following is a sample.
+The following is a sample.
 ```
 data.exe --id 22030531 --name "小唐" --class_name "22软件一" --college "计算机信息工程学院" --political "共青团员"
 ```
